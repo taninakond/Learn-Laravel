@@ -65,6 +65,18 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
+
+## Create Or Delete Windows Virtual host with XAMPP
+
+1. Stop XAMPP
+2. Explorer -> apache -> conf -> extra -> httpd-vhosts.conf
+3. <VirtualHost *:80>
+        DocumentRoot "C:/xampp/htdocs/blog"
+        ServerName blog.com
+    </VirtualHost>
+4. Open Notepad (administrator) -> file -> open -> System32 -> driver -> etc -> hosts
+5. 127.0.0.1 Blog.com
+
 ## Laravel Install with composer command
 
 Laravel install with composer
