@@ -67,18 +67,34 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 ## Laravel Install with composer command
 
-composer create_project laravel/laravel project_name
+Laravel install with composer
+
+    composer create_project laravel/laravel project_name
 
 ## Install Laravel global installer
 
-composer global require laravel/installer
+Laravel Global Installer
+
+    composer global require laravel/installer
+
+## Laravel install with Laravel Installer
+
+    laravel new project_name
 
 ## Laravel artisan commands
 
-Run server              => php artisan serve
-Make Controller         => php artisan make:controller controller_name
-Make Resource           => php artisan make:controller resource_name --resource
-Make Single Controller  => php artisan make:controller  controller_name --invokable
+Run server
+    
+    php artisan serve
+Make Controller
+
+    php artisan make:controller controller_name
+Make Resource
+    
+    php artisan make:controller resource_name --resource
+Make Single Controller
+    
+    php artisan make:controller  controller_name --invokable
 
 ## Laravel Database migration artisan commands
 
@@ -102,10 +118,16 @@ Migration Rollback
 
 php artisan tinker
 
-    insertData => DB::table('table_name')->insert(["column_name_1" => "value","column_name_2"=>"value"]);
+insertData
 
-    getData => DB::table('table_name')->get();
+    DB::table('table_name')->insert(["column_name_1" => "value","column_name_2"=>"value"]);
+
+getData
+
+    DB::table('table_name')->get();
 
 ## mysql commands
 
-mysql -u root -p
+mysql login with cli
+
+    mysql -u root -p
