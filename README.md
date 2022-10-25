@@ -82,15 +82,21 @@ Make Single Controller  => php artisan make:controller  controller_name --invoka
 
 ## Laravel Database migration artisan commands
 
-Migration           => php artisan migrate
-Make Migration      => php artisan make:migration create_table_name
-Add Column          => php artisan make:migration add_column_name_to_table_name
-Migration status    => php artisan migrate:status
-Migration Rollback  => php artisan migrate:rollback
+Migration
+    php artisan migrate
+Make Migration
+    php artisan make:migration create_table_name
+Add Column
+    php artisan make:migration add_column_name_to_table_name
+Migration status
+    php artisan migrate:status
+Migration Rollback
+    php artisan migrate:rollback
 
 ## Tinker command
 
 php artisan tinker
+
     insertData => DB::table('table_name')->insert(["column_name_1" => "value","column_name_2"=>"value"]);
 
     getData => DB::table('table_name')->get();
